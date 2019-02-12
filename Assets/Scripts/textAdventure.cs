@@ -150,13 +150,13 @@ public class textAdventure : MonoBehaviour
         {
             if (alive)
             {
-                leftB.onClick.AddListener(() => ButtonClicked(winThree, town, 4));
+                rightB.onClick.AddListener(() => ButtonClicked(winThree, town, 5));
             }
             else if (!alive)
             {
-                leftB.onClick.AddListener(() => ButtonClicked(god, town, 4));
+                rightB.onClick.AddListener(() => ButtonClicked(winTwo, town, 5));
             }
-            rightB.onClick.AddListener(() => ButtonClicked(winTwo, town, 5));
+            leftB.onClick.AddListener(() => ButtonClicked(god, town, 4));
             continueB.onClick.AddListener(() => continueMe());
         }
         else if (story.text == god[1])
